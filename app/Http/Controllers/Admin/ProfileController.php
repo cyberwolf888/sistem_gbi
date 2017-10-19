@@ -57,6 +57,7 @@ class ProfileController extends Controller
         }
 
         $user->name = $request->name;
+        $user->email = $request->email;
         $user->phone = $request->phone;
         $user->address = $request->address;
         $user->tempat_lahir = $request->tempat_lahir;
