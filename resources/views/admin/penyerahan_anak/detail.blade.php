@@ -39,11 +39,13 @@
                             <div class="row">
                                 <div class="col-lg-12" >
                                     <table class="table">
+                                        @if($model->user->img != null)
                                         <tr>
                                             <td>
                                                 <img src="{{ url('assets/profile/'.$model->user->img) }}" width="150" height="200">
                                             </td>
                                         </tr>
+                                        @endif
                                         <tr>
                                             <td>
                                                 <h5>Nama Orang Tua</h5>

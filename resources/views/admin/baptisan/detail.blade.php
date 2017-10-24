@@ -40,11 +40,13 @@
                                                 <h3>{{ $model->tgl_baptis == null ? 'Belum ditentukan' : date('d F Y',strtotime($model->tgl_baptis)) }}</h3>
                                             </td>
                                         </tr>
+                                        @if($model->user->img != null)
                                         <tr>
                                             <td>
                                                 <img src="{{ url('assets/profile/'.$model->user->img) }}" width="150" height="200">
                                             </td>
                                         </tr>
+                                        @endif
                                         <tr>
                                             <td>
                                                 <h5>Nama Lengkap</h5>
